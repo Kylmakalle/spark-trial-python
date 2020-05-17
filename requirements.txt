@@ -19,3 +19,6 @@ pytest-cov==2.4.0
 # Fabric3==1.13.1.post1
 # tox==2.7.0
 
+# New versions are incompatable with this flask 0.12 :(
+werkzeug<1.0
+

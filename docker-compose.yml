@@ -1,0 +1,11 @@
+version: '3'
+
+
+services:
+  server:
+    build: .
+    command: sh -c 'python manage.py init_db && python manage.py runserver --host 0.0.0.0'
+    ports:
+      - "5000:5000"
+    volumes:
+    - "./app.sqlite:/opt/app/app.sqlite"
